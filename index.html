@@ -57,13 +57,12 @@ function draw(q=''){
     a.className='tile';a.href=url;
     const img=document.createElement('img');img.loading='lazy';img.src=photo+'.webp';img.alt=title;
     const content=document.createElement('div');content.className='tile-content';
-    const number=document.createElement('span');number.className='number';number.textContent='КАТАЛОГ';
     const details=document.createElement('div');
     const heading=document.createElement('h3');heading.textContent=title;
     const p=document.createElement('p');p.textContent=desc;
     details.append(heading,p);
     const arrow=document.createElement('span');arrow.className='arrow';arrow.textContent='↗';
-    content.append(number,details,arrow);a.append(img,content);grid.append(a);
+    content.append(details,arrow);a.append(img,content);grid.append(a);
   });
   document.querySelector('#noResults').hidden=!!count;
 }

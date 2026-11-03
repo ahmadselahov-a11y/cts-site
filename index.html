@@ -34,7 +34,7 @@ header .logo img{max-width:520px;mix-blend-mode:screen}
 @media(max-width:650px){.head{min-height:auto}.hero{padding-top:58px;background:linear-gradient(90deg,#03182af5,#03182ad9),url('cts-hero-fleet.png') center center/cover no-repeat}.hero h1{font-size:42px}.hero .lead{font-size:15px}.hero-categories{grid-template-columns:1fr 1fr;padding:20px 14px}.hero-category{padding:6px 10px;border:0;font-size:12px}.category-icon{font-size:20px}header .logo img{max-width:100%}}
 </style><style>
 /* CTS corrections: seamless full-width header, clean hero, wider about text */
-header{background:#03182a url('cts-header-wide.jpg') left center/cover no-repeat;min-height:156px}
+header{background:#03182a url('cts-header-wide.jpg') center center/cover no-repeat;min-height:156px}
 header .head{max-width:100%;min-height:156px;padding-left:max(28px,calc((100vw - 1450px)/2));padding-right:max(28px,calc((100vw - 1450px)/2))}
 header .logo{display:block;flex:0 0 600px;width:600px;min-height:150px;max-width:none}
 header .nav{position:relative;z-index:2}
@@ -45,6 +45,45 @@ header .nav{position:relative;z-index:2}
 @media(max-width:1050px){header .logo{flex-basis:48%;width:48%}header{background-position:left center}.hero{background:linear-gradient(90deg,#03182af7,#03182acc 60%,#03182a77),url('cts-hero-fleet.png') right center/auto 100% no-repeat,#03182a}}
 @media(max-width:900px){#approach .about-copy{columns:1}}
 @media(max-width:650px){header{min-height:110px;background-size:auto 110px;background-position:left center}header .head{min-height:110px;display:flex;align-items:flex-end;padding-top:8px;padding-bottom:10px;gap:6px}header .logo{flex-basis:55%;width:55%;min-height:88px}header .nav{gap:12px;justify-content:flex-end;flex-wrap:wrap;font-size:9px}.hero{background:linear-gradient(90deg,#03182af5,#03182ad9),url('cts-hero-fleet.png') center center/cover no-repeat}.hero-categories{padding-left:14px;padding-right:14px}}
+</style><style>
+/* Mobile header correction only — desktop and page content unchanged. */
+@media (max-width: 650px) {
+  header { min-height: 0; background-size: 100% auto; background-position: center top; }
+  header .head {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0;
+    min-height: 0;
+    padding: 0 16px 12px;
+  }
+  header .logo {
+    display: block;
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 0;
+    height: auto;
+    aspect-ratio: 4 / 1;
+    background: transparent;
+  }
+  header .nav {
+    display: flex;
+    position: relative;
+    flex: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    padding: 10px 0 0;
+    font-size: 11px;
+    line-height: 1.5;
+  }
+  header .nav a { white-space: nowrap; }
+}
 </style></head><body><header><div class="wrap head"><a class="logo" href="#top" aria-label="ЦТС — Центр транспортного снабжения"></a><nav class="nav"><a href="#catalog">Каталог</a><a href="#approach">О компании</a><a href="#contact">Контакты</a></nav></div></header><main id="top"><section class="hero"><div class="wrap"><h1>Транспорт и техника на все случаи жизни</h1><p class="lead">Подбираем решения под задачи заказчика: от автобусов и микроавтобусов до водного транспорта, техники для зимних видов спорта, активного отдыха, а также хозяйственного транспорта для обслуживания территорий.</p><p class="lead lead-second">Помогаем определить подходящую модель, согласовать комплектацию и технические требования, организовать поставку, а также содействуем в организации последующего технического обслуживания и ремонта через наших сервисных партнёров.</p><div class="actions"><a class="btn light" href="#approach">О компании  →</a><a class="btn outline" href="#catalog">Смотреть каталог</a></div></div><div class="hero-categories"><div class="hero-category"><span class="category-icon">▣</span><span>Пассажирский транспорт</span></div><div class="hero-category"><span class="category-icon">≋</span><span>Водный транспорт</span></div><div class="hero-category"><span class="category-icon">△</span><span>Техника для зимних видов спорта</span></div><div class="hero-category"><span class="category-icon">◇</span><span>Техника для активного отдыха</span></div><div class="hero-category"><span class="category-icon">▤</span><span>Хозяйственный транспорт</span></div></div></section><section class="section feature" id="approach"><div class="wrap"><div class="kicker">О компании</div><h2>ЦЕНТР ТРАНСПОРТНОГО СНАБЖЕНИЯ</h2><p class="about-subtitle">Комплексные поставки транспорта, техники и оборудования</p><div class="about-copy"><p><strong>Центр транспортного снабжения (ЦТС)</strong> — команда профессионалов, специализирующаяся на комплексных поставках автомобильного и пассажирского транспорта, хозяйственной и производственной техники, специализированных машин и оборудования для различных отраслей и направлений деятельности.</p><p>Мы обеспечиваем потребности предприятий, организаций и государственных учреждений в современной технике, включая транспортные средства, оборудование для водного транспорта, зимних видов спорта, горнолыжной индустрии и других специализированных направлений.</p><p>За нашими плечами — значительный опыт взаимодействия с заводами-изготовителями и поставщиками техники. Выстроенные деловые отношения позволяют нам подбирать оптимальные решения с учётом задач заказчика, технических требований и специфики эксплуатации оборудования.</p><p><strong>Наша работа не заканчивается поставкой техники.</strong> Мы уделяем особое внимание надёжности и долгосрочной эксплуатации поставляемой продукции, обеспечивая организацию гарантийного обслуживания, сервисной поддержки и ремонта в течение всего гарантийного периода в соответствии с условиями производителя и договора поставки.</p><p>В основе нашей работы — профессионализм, ответственность за результат, внимательное отношение к требованиям заказчика и стремление выстраивать долгосрочные партнёрские отношения.</p><p class="about-finale"><strong>ЦТС — надёжный партнёр в комплексном обеспечении транспортом и техникой.</strong></p></div></div></section><section class="section" id="catalog"><div class="wrap"><div class="section-head"><div><div class="kicker">Направления поставок</div><h2>Каталог техники</h2><p class="muted">Подбор транспорта, техники и оборудования с учётом задач и технических требований заказчика.</p></div><input aria-label="Поиск по категориям" class="search" id="search" placeholder="Поиск по категориям" type="search"/></div><div class="grid" id="categories"></div><p class="muted" hidden="" id="noResults">По вашему запросу категории не найдены.</p></div></section><section class="section contact" id="contact"><div class="wrap"><div class="kicker">Обратная связь</div><h2>Контактная информация</h2><p class="muted">Свяжитесь с нами для обсуждения поставки транспорта и специализированной техники.</p><div class="contact-info"><div class="contact-item"><small>Электронная почта</small><a href="mailto:ctstransport@yandex.ru">ctstransport@yandex.ru</a></div><div class="contact-item"><small>Телефон</small><strong class="contact-placeholder">Номер уточняется</strong></div></div></div></section></main><footer><div class="wrap foot"><span>© <span id="year">Транспорт · Спортивная и специализированная техника</span> Центр транспортного снабжения</span><span>Поставка новой техники · Каталог и предложения по запросу</span></div></footer><script>
 const items=[["Автобусы", "Пассажирские, туристические, для спортивных команд", "bus", "avtobusy.html"], ["Микроавтобусы", "Пассажирские и специализированные", "minibus", "mikroavtobusy.html"], ["Снегоходы", "Спортивные, туристические, утилитарные", "snowmobile", "snegohody.html"], ["Катера и лодки", "Водный транспорт для спорта и отдыха", "water", "katera-i-lodki.html"], ["Гидроциклы", "Техника для активного отдыха на воде", "water", "gidrocikly.html"], ["Квадроциклы", "ATV, UTV, мотовездеходы", "atv", "kvadrocikly.html"], ["Горные мотобайки", "Эндуро и внедорожные мотоциклы", "enduro", "gornye-motobaiki.html"], ["Ратраки", "Техника для подготовки снежных трасс", "groomer", "ratraki.html"], ["Ледозаливочные машины", "Техника для ледовых арен и катков", "ice", "ledozalivochnye-mashiny.html"], ["Хозяйственная и специальная техника", "Погрузчики, тракторы и коммунальные машины", "utility", "hozyaystvennaya-specialnaya-tehnika.html"]];
 const grid=document.querySelector('#categories');
